@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .login-container {
+            background-color: #fff;
+            width: 350px;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .login-container h2 {
+            color: #4a4a4a;
+            margin-bottom: 20px;
+        }
+
+        .social-buttons {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+
+        .social-buttons button {
+            width: 48%;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            color: #fff;
+        }
+
+        .social-buttons .facebook {
+            background-color: #3b5998;
+        }
+
+        .social-buttons .google {
+            background-color: #db4437;
+        }
+
+        .separator {
+            margin: 20px 0;
+            position: relative;
+        }
+
+        .separator::before,
+        .separator::after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            width: 40%;
+            height: 1px;
+            background-color: #ccc;
+        }
+
+        .separator::before {
+            left: 0;
+        }
+
+        .separator::after {
+            right: 0;
+        }
+
+        .separator span {
+            background-color: #fff;
+            padding: 0 10px;
+            color: #666;
+        }
+
+        .input-field {
+            margin-bottom: 15px;
+        }
+
+        .input-field input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+
+        .login-button {
+            background: linear-gradient(to right, #4a00e0, #8e2de2);
+            color: #fff;
+            border: none;
+            padding: 10px;
+            width: 100%;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            margin-bottom: 10px;
+        }
+
+        .login-container a {
+            color: #4a00e0;
+            text-decoration: none;
+        }
+
+        .login-container a:hover {
+            text-decoration: underline;
+        }
+
+        .footer-text {
+            font-size: 14px;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <h2>Welcome To Login</h2>
+        <div class="social-buttons">
+            <button class="facebook">Facebook</button>
+            <button class="google">Google</button>
+        </div>
+        <div class="separator">
+            <span>or</span>
+        </div>
+        <div class="input-field">
+            <input type="text" placeholder="Username">
+        </div>
+        <div class="input-field">
+            <input type="password" placeholder="Password">
+        </div>
+        <button class="login-button">Login</button>
+        <p><a href="#">Forget Password?</a></p>
+        <p class="footer-text">Don't have an account? <a href="#">Register Now</a></p>
+    </div>
+</body>
+</html>
